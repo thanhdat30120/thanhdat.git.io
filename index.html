@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap</title>
+        <link rel="stylesheet" href="./main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <h1>Nguyễn Hữu Thành Đạt-B19DCDT049</h1>
+        <div class="row m-0" style="height: 200px;">
+            <div class="col-sm-4  box2 boxa">
+                <p id="demo"></p>
+                <button type="button" class="btn btn-danger btn-lg" onclick='document.getElementById("demo").innerHTML = "26°C"'>Nhiệt độ</button>
+            </div>
+             <div class="col-sm-4 box2 boxb">
+                <p id="demo1"></p>
+                <button type="button" class="btn btn-info btn-lg" onclick='document.getElementById("demo1").innerHTML = "85%"'>Độ ẩm</button> 
+             </div>
+             <div class="col-sm-4 box2 boxc">
+                <p id="demo2"></p>
+                <button type="button" class="btn btn-warning btn-lg" onclick='document.getElementById("demo2").innerHTML = "100lux"'>Ánh sáng</button>
+             </div>
+         </div>
+         <div class="row m-0" style="height: 400px;">
+            <div class="col-md-8 box2 boxd">
+                <p>Biểu Đồ</p>
+                <img src="hinh 5.13.bmp" alt="" width="500px">
+            </div>
+            <div class="col-sm-4 p-0 ">
+                <div class="col-sm-12 box1 boxe" id="background">
+                    <p id="background"> Led 1</p>
+                    <button class="btn btn-outline-danger" onclick='document.getElementById("background").style.background="#CC33CC"'>ON</button>
+                    <button class="btn btn-outline-danger" onclick='document.getElementById("background").style.background="#33CC99"'>OFF</button>
+                </div>
+                <div class="col-sm-12 box1 boxf">
+                    <p> Led 2</p>
+                    <div id="wrapper">
+                        <input type="checkbox" name="" class="switch-toggle" id="on-off">
+                    </div>
+                </div>
+            </div>
+         </div>
+    </body>
+</html>
